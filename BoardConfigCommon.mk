@@ -249,7 +249,10 @@ SELINUX_IGNORE_NEVERALLOWS := true
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
-# Treble
+# USB
+TARGET_QTI_USB_SUPPORTS_AUDIO_ACCESSORY := true
+
+# VNDK
 BOARD_VNDK_VERSION := current
 
 # Vendor Security patch level
