@@ -107,6 +107,9 @@ TARGET_EXFAT_DRIVER := exfat
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # FM
 
 BOARD_HAS_QCA_FM_SOC := cherokee
