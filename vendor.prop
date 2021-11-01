@@ -58,6 +58,7 @@ dalvik.vm.heapminfree=2m
 dalvik.vm.heapmaxfree=8m
 
 # Display
+debug.hwui.use_buffer_age=false
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 persist.hwc.mdpcomp.enable=true
