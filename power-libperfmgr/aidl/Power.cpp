@@ -31,7 +31,7 @@
 #include "PowerSessionManager.h"
 
 #ifndef TAP_TO_WAKE_NODE
-#define TAP_TO_WAKE_NODE "/sys/kernel/touchpanel/dclicknode"
+#define TAP_TO_WAKE_NODE "/proc/touchpanel/double_tap_enable"
 #endif
 
 #ifndef TAP_TO_WAKE_NODE2
