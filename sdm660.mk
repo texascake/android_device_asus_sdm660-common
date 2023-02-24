@@ -304,7 +304,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
-    libgui_vendor
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_soft_common.vendor \
+    libcodec2_vndk.vendor \
+    libgui_vendor \
+    libsfplugin_ccodec_utils.vendor
 
 PRODUCT_PACKAGES += \
     libcodec2_soft_aacdec \
