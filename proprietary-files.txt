@@ -815,11 +815,11 @@ vendor/bin/subsystem_ramdump
 vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
 
-# Thermal - from helios-user 13 13-22-18.00-TG-U00-STD-HEL-04 62
+# Thermal
 vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalioctl.so
 
 # TUI - from helios-user 13 13-22-18.00-TG-U00-STD-HEL-04 62
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
