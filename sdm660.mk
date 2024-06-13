@@ -161,7 +161,8 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm-service.clearkey \
+    libhidlmemory.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -182,7 +183,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -290,7 +292,8 @@ PRODUCT_PACKAGES += \
 
 # Network
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
+    android.system.net.netd@1.1.vendor \
+    libnetutils.vendor
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -440,7 +443,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
     libavservices_minijail.vendor \
-    librmnetctl
+    librmnetctl \
+    libsqlite.vendor \
+    libsysutils.vendor
 
 # Recovery
 PRODUCT_PACKAGES += \
