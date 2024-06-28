@@ -564,6 +564,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstdc++_vendor
 
+PRODUCT_EXTRA_VNDK_VERSIONS := 30 31 32 33 34
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd@1.0.vendor \
