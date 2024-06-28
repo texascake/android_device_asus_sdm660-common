@@ -160,7 +160,8 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm-service.clearkey \
+    libhidlmemory.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -245,7 +246,8 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0.vendor
+    android.hardware.keymaster@3.0.vendor \
+    libion.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -439,7 +441,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
     libavservices_minijail.vendor \
-    librmnetctl
+    librmnetctl \
+    libsqlite.vendor \
+    libsysutils.vendor
 
 # Recovery
 PRODUCT_PACKAGES += \
