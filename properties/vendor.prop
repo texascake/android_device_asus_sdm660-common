@@ -180,11 +180,6 @@ vendor.video.disable.ubwc=1
 vendor.usb.use_ffs_mtp=1
 vendor.usb.diag.func.name=diag
 
-# Zram-writeback
-ro.zram.mark_idle_delay_mins=60
-ro.zram.first_wb_delay_mins=180
-ro.zram.periodic_wb_delay_hours=24
-
 # Lmk
 ro.config.low_ram = false
 ro.lmk.log_stats = true
