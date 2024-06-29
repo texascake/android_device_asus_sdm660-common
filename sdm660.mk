@@ -489,12 +489,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
-# Set GRF/Vendor freeze properties
-BOARD_SHIPPING_API_LEVEL := 27
-SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
-PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
-BOARD_API_LEVEL :=  $(BOARD_SHIPPING_API_LEVEL)
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
@@ -529,6 +523,9 @@ PRODUCT_PACKAGES += \
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.asus_sdm660
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 27
 
 # USB
 PRODUCT_PACKAGES += \
