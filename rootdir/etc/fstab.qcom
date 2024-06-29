@@ -29,4 +29,4 @@
 /dev/block/bootdevice/by-name/persist                                 /mnt/vendor/persist    ext4   nosuid,nodev,barrier=1,noatime                                                                   wait,check
 
 # ZRAM
-/dev/block/zram0                                                      none                   swap   defaults                                                                                         zramsize=75%,zram_backingdev_size=512M
+/dev/block/zram0                                                      none                   swap   defaults                                                                                         zramsize=75%

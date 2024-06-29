@@ -263,9 +263,6 @@
         <item>com.android.location.fused</item>
     </string-array>
 
-    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">true</bool>
-
     <!-- Control the behavior when the user long presses the power button.
             0 - Nothing
             1 - Global actions menu
