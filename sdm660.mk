@@ -6,6 +6,7 @@
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/sdm660-common/sdm660-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/extra/product.mk)
 
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
@@ -564,7 +565,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstdc++_vendor
 
-PRODUCT_EXTRA_VNDK_VERSIONS := 30 31 32 33 34
+#PRODUCT_EXTRA_VNDK_VERSIONS := 30 31 32 33 34
 
 # Wifi
 PRODUCT_PACKAGES += \
