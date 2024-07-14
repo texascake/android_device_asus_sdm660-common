@@ -270,8 +270,11 @@ PRODUCT_PACKAGES += \
     Tag
 
 # OEM Unlock reporting
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.oem_unlock_supported=1
+ifneq (eng,$(TARGET_BUILD_VARIANT))
+ifneq (,$(wildcard vendor/extra/keys/releasekey.pk8))
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/extra/keys/releasekey
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES := ro.oem_unlock_supported=1
+endif
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -483,3 +486,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+-include vendor/extra/product.mk
