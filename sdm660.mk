@@ -86,9 +86,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
-
-PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0 \
     android.hardware.camera.provider@2.6 \
     android.hardware.camera.provider@2.4-impl \
@@ -274,6 +271,7 @@ ifneq (eng,$(TARGET_BUILD_VARIANT))
 ifneq (,$(wildcard vendor/extra/keys/releasekey.pk8))
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/extra/keys/releasekey
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := ro.oem_unlock_supported=1
+endif
 endif
 
 # OMX

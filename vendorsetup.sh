@@ -13,11 +13,11 @@ rm -rf build/make
 rm -rf frameworks/base
 rm -rf system/core
 rm -rf vendor/extra
-#rm -rf vendor/xdroid
+rm -rf vendor/xdroid
 git clone --depth=1 https://github.com/texascake/xd_build_make -b eleven build/make
 git clone --depth=1 https://github.com/texascake/xd_frameworks_base -b eleven frameworks/base
 git clone --depth=1 https://github.com/texascake/xd_system_core -b eleven system/core
 git clone --depth=1 https://github.com/texascake/vendor kunci && cp -R kunci/* vendor/ && rm -rf kunci
-#git clone --depth=1 https://github.com/texascake/xd_vendor_xdroid -b eleven vendor/xdroid
+git clone --depth=1 https://github.com/texascake/xd_vendor_xdroid -b eleven vendor/xdroid
 
 export TZ=Asia/Jakarta
