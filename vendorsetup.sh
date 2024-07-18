@@ -1,5 +1,5 @@
 rm -rf kernel/asus/sdm660
-git clone --depth=1 --recursive https://github.com/Kneba/kernel_asus_sdm660 -b perf kernel/asus/sdm660
+git clone --depth=1 --recursive https://github.com/Kneba/kernel_asus_sdm660 -b perf+ kernel/asus/sdm660
 rm -rf kernel/asus/sdm660/KernelSU/userspace
 
 rm -rf hardware/qcom-caf/msm8998/audio
