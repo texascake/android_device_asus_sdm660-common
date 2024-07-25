@@ -511,6 +511,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Thermal configs
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.asus_sdm660
