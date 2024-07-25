@@ -105,33 +105,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "KernelBatterySaver",
-      "Path": "/sys/module/battery_saver/parameters/enabled",
-      "Values": [
-        "Y",
-        "N"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "UClampForegroundBoost",
-      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
-      "Values": [
-        "30",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "UClampTopAppBoost",
-      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
-      "Values": [
-        "65",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -242,18 +215,6 @@
       "Value": "10000"
     },
     {
-      "PowerHint": "LAUNCH",
-      "Node": "UClampForegroundBoost",
-      "Duration": 6000,
-      "Value": "30"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "UClampTopAppBoost",
-      "Duration": 6000,
-      "Value": "65"
-    },
-    {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "PowerHALRenderingState",
       "Duration": 0,
@@ -271,11 +232,5 @@
       "Duration": 0,
       "Value": "647000000"
     },
-    {
-      "PowerHint": "LOW_POWER",
-      "Node": "KernelBatterySaver",
-      "Duration": 0,
-      "Value": "Y"
-    }
   ]
 }
