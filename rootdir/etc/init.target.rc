@@ -295,24 +295,6 @@ on property:sys.boot_completed=1
     # Stop bootanimation
     stop bootanim
 
-on property:init.svc.surfaceflinger=stopped
-    stop ppd
-
-on property:init.svc.surfaceflinger=running
-    start ppd
-
-on property:init.svc.surfaceflinger=restarting
-    stop ppd
-
-on property:init.svc.zygote=stopped
-    stop ppd
-
-on property:init.svc.zygote=running
-    start ppd
-
-on property:init.svc.zygote=restarting
-    stop ppd
-
 on property:init.svc.vendor.charger=running
     start qcom-post-boot
     start vendor.hvdcp_opti
