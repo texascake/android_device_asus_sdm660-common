@@ -178,7 +178,7 @@ on early-boot
     chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
 
 on boot
-    start vendor.rmt_storage
+    start rmt_storage
 
     # Thermal
     chmod 0664 /sys/class/thermal/thermal_message/sconfig
@@ -267,13 +267,19 @@ service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
     user root
     oneshot
 
+service vendor.sensors.qti /vendor/bin/sensors.qti
+    class core
+    user system
+    group system
+    disabled
+
 service vendor.pd_mapper /vendor/bin/pd-mapper
      class core
 
 on property:vold.decrypt=trigger_restart_framework
    restart vendor.camera-provider-2-4
 
-service vendor.dcvs-sh /vendor/bin/init.qti.dcvs.sh
+service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     class late_start
     user root
     group root system
@@ -281,7 +287,7 @@ service vendor.dcvs-sh /vendor/bin/init.qti.dcvs.sh
     oneshot
 
 on property:vendor.dcvs.prop=1
-   start vendor.dcvs-sh
+   start dcvs-sh
 
 on property:sys.boot_completed=1
     # Enable PowerHAL hint processing
@@ -308,7 +314,7 @@ on property:init.svc.zygote=restarting
     stop ppd
 
 on property:init.svc.vendor.charger=running
-    start vendor.qcom-post-boot
+    start qcom-post-boot
     start vendor.hvdcp_opti
     setprop vendor.usb.controller a800000.dwc3
     setprop sys.usb.configfs 1
