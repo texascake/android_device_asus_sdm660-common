@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor \
+    libpng.vendor:32 \
     libxml2
 
 # Cgroup and task_profiles
@@ -162,7 +163,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey \
-    libhidlmemory.vendor
+    libhidlmemory.vendor:64
 
 # FM
 PRODUCT_PACKAGES += \
@@ -435,7 +436,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     libavservices_minijail.vendor \
     librmnetctl \
-    libsqlite.vendor \
+    libsqlite.vendor:64 \
     libsysutils.vendor
 
 # Recovery
@@ -475,7 +476,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
     android.frameworks.sensorservice@1.0 \
-    android.frameworks.sensorservice@1.0.vendor
+    android.frameworks.sensorservice@1.0.vendor \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
