@@ -163,6 +163,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey \
+    libunwindstack.vendor \
     libhidlmemory.vendor:64
 
 # FM
@@ -205,6 +206,7 @@ $(call inherit-product, $(COMMON_PATH)/gps/gps_vendor_product.mk)
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     libsensorndkbridge \
+    libcurl.vendor \
     libwifi-hal-ctrl
 
 PRODUCT_PACKAGES += \
