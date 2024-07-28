@@ -178,7 +178,6 @@ vendor.video.disable.ubwc=1
 
 # USB
 vendor.usb.use_ffs_mtp=1
-vendor.usb.use_gadget_hal=1
 vendor.usb.diag.func.name=diag
 
 # Lmk
