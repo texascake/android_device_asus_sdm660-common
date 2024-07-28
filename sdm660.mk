@@ -461,12 +461,14 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qti.dcvs.sh \
     init.qcom.sensors.sh \
-    init.qcom.sh
+    init.qcom.sh \
+    init.qcom.usb.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.asus.rc \
     init.qcom.rc \
+    init.msm.usb.configfs.rc \
     init.asus_parts.rc \
     init.recovery.qcom.rc \
     init.target.rc \
