@@ -180,6 +180,14 @@
         <instance>default</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+        <name>vendor.focaltech.fingerprint</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFocalFingerprintService</name>
+            <instance>default</instance>
+        </interface>
+</hal>
 <hal format="aidl" optional="true">
     <name>vendor.lineage.health</name>
     <interface>
