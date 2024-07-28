@@ -103,6 +103,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor \
+    liblz4.vendor \
+    libutilscallstack.vendor \
     libpng.vendor:32 \
     libxml2
 
@@ -424,6 +426,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/qmi/qmi_fw.conf:$(TARGET_COPY_OUT_VENDOR)/etc/qmi_fw.conf
 
 PRODUCT_PACKAGES += \
+    libcrypto_utils.vendor \
+    libjsoncpp.vendor \
     libjson \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
