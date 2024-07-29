@@ -581,7 +581,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi.hostapd@1.0.vendor \
+    android.hardware.wifi.hostapd@1.3.vendor \
     android.hardware.wifi-service \
     android.hardware.wifi@1.6.vendor \
     hostapd \
