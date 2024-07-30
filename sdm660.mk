@@ -388,6 +388,8 @@ PRODUCT_PACKAGES += \
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
+    libhypv_intercept \
+    libmedia_omx.vendor \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -397,6 +399,18 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
+    libOmxVidcCommon \
+    libstagefright_amrnb_common.vendor \
+    libstagefright_bufferpool@2.0.1.vendor \
+    libstagefright_bufferqueue_helper.vendor \
+    libstagefright_enc_common.vendor \
+    libstagefright_flacdec.vendor \
+    libstagefright_foundation.vendor \
+    libstagefright_omx.vendor \
+    libstagefright_omx_utils.vendor \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor \
+    libstagefright_xmlparser.vendor \
     libstagefrighthw
 
 # Overlays
@@ -637,7 +651,8 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    android.media.audio.common.types-V2-cpp
+    android.media.audio.common.types-V2-cpp \
+    libnl
 
 # DeviceSettings
 PRODUCT_PACKAGES += \
