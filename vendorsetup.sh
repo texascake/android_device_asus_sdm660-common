@@ -20,6 +20,4 @@ git clone --depth=1 https://github.com/texascake/xd_system_core -b eleven system
 git clone --depth=1 https://github.com/texascake/vendor kunci && cp -R kunci/* vendor/ && rm -rf kunci
 git clone --depth=1 https://github.com/texascake/xd_vendor_xdroid -b eleven vendor/xdroid
 
-rm -rf packages/apps/SoftAPManager
-
 export TZ=Asia/Jakarta
