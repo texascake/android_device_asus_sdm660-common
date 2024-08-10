@@ -206,8 +206,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 TARGET_COPY_OUT_VENDOR := vendor
 
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist
+BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
+BOARD_ROOT_EXTRA_SYMLINKS += /mnt/vendor/persist:/persist
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
