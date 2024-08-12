@@ -1,0 +1,3 @@
+allow vendor_qtelephony property_socket:sock_file { write };
+allow vendor_qtelephony init:unix_stream_socket { connectto };
+allow vendor_qtelephony vendor_qcom_ims_prop:property_service { set };
