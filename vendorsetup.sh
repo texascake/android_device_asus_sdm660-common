@@ -6,9 +6,9 @@ git clone --depth=1 https://github.com/AslenoLineageStuff/msm-4.4 kernel/asus/sd
 rm -rf hardware/qcom-caf/msm8998/audio
 rm -rf hardware/qcom-caf/msm8998/display
 rm -rf hardware/qcom-caf/msm8998/media
-git clone --depth=1 https://github.com/ArrowOS/android_hardware_qcom_audio -b arrow-11.0-caf-msm8998 hardware/qcom-caf/msm8998/audio
-git clone --depth=1 https://github.com/ArrowOS/android_hardware_qcom_display -b arrow-11.0-caf-msm8998 hardware/qcom-caf/msm8998/display
-git clone --depth=1 https://github.com/ArrowOS/android_hardware_qcom_media -b arrow-11.0-caf-msm8998 hardware/qcom-caf/msm8998/media
+git clone --depth=1 https://github.com/AOSP-11/hardware_qcom-caf_audio_msm8998 hardware/qcom-caf/msm8998/audio
+git clone --depth=1 https://github.com/Project-404-Asus-SDM660/android_hardware_qcom_display hardware/qcom-caf/msm8998/display
+git clone --depth=1 https://github.com/Project-404-Asus-SDM660/android_hardware_qcom_media hardware/qcom-caf/msm8998/media
 
 rm -rf build/make
 rm -rf frameworks/base
