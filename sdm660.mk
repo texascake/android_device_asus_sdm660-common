@@ -18,10 +18,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Common Tree Path
 COMMON_PATH := device/asus/sdm660-common
 
-# AID/fs configs
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # AdGuard CA Root Certificate 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/etc/security/cacerts/0f4ed297.0:$(TARGET_COPY_OUT_SYSTEM)/etc/security/cacerts/0f4ed297.0
