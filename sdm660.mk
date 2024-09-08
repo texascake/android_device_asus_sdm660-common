@@ -499,7 +499,8 @@ PRODUCT_PACKAGES += \
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings
+    SettingsGoogle \
+    SystemUIGoogle
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -540,8 +541,10 @@ PRODUCT_PACKAGES += \
     librecovery_updater_asus
 
 # Remove unwanted packages
+ifeq ($(WITH_GAPPS),true)
 PRODUCT_PACKAGES += \
     RemovePackages
+endif
 
 # Ramdisk
 PRODUCT_PACKAGES += \
