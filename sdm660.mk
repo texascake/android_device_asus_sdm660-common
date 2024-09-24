@@ -199,6 +199,10 @@ PRODUCT_PACKAGES += \
     libunwindstack.vendor \
     libhidlmemory.vendor:64
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    liblzma.vendor
+
 # FM
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
@@ -537,7 +541,7 @@ PRODUCT_PACKAGES += \
     librecovery_updater_asus
 
 # Remove unwanted packages
-ifeq ($(WITH_GAPPS),true)
+ifeq ($(WITH_GMS),true)
 PRODUCT_PACKAGES += \
     RemovePackages
 endif
