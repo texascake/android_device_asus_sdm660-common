@@ -57,7 +57,6 @@ ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y9
 persist.vendor.overlay.izat.optin=rro
 
 # Graphics
-debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=0
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
